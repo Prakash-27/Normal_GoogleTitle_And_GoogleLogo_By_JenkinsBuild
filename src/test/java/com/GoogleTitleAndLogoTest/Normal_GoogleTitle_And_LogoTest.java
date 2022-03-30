@@ -14,11 +14,11 @@ public class Normal_GoogleTitle_And_LogoTest {
 
 	WebDriver driver;
 
-	
 	@BeforeMethod
 	public void setUp() {
 		
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Prakash\\eclipse-workspace\\Normal_GoogleTitle_And_GoogleLogo_By_JenkinsBuild\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Prakash\\eclipse-workspace\\"
+				+ "Normal_GoogleTitle_And_GoogleLogo_By_JenkinsBuild\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
@@ -48,7 +48,6 @@ public class Normal_GoogleTitle_And_LogoTest {
 
 	@AfterMethod
 	public void tearDown() {
-
 		driver.quit();
 
 	}
